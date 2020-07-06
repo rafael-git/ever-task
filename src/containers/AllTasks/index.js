@@ -9,7 +9,7 @@ const AllTasks = (props) => {
         <TaskCollection>
            {
                props.tasks.map(task => (
-                   <Task name={task.name} duration={task.duration}/>
+                   <Task isChecked={task.done} name={task.name} duration={task.duration}/>
                ))
            }
         </TaskCollection>            
