@@ -1,0 +1,50 @@
+.task{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    min-height: 3.4rem;
+    justify-content: center;
+    
+
+
+    
+    padding: .5% 0;
+
+    .task-elements{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        text-align: center;
+        
+    }
+    .t-check{
+        flex-grow: 1.3;
+        
+    }
+    .t-name{
+        flex-grow: 6;
+        padding-left: 2rem;
+    }
+    .t-duration{
+        flex-grow: 3;
+        
+    }
+    .t-edit{
+        flex-grow: 1.1;
+        padding-right: 1.5rem;
+    }
+
+}
+.icon{
+    fill: #085c08;
+}
+
+.i-edit{
+    fill: #6e6e6e;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.task:not(:last-child){
+    border-bottom: 1px solid #eb2f64;
+}

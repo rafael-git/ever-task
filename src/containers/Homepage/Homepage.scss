@@ -1,0 +1,98 @@
+.heading-primary{
+    color: #eb2f64;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+   
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        /*
+            animation-delay: 3s;4
+            animation-iteration-count: 3;
+            
+        */
+        
+    }
+    
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.15rem;
+        animation: moveInRight 1s ease-out;
+
+       
+    }
+}
+
+
+.btn-container{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.link-button{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 2rem 6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, #FF3366, #BA265D);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 33rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        background-image: linear-gradient(to left, #FF3366, #BA265D);
+        
+    }
+}
+
+
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform: translateX(2rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
