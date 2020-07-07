@@ -11,7 +11,6 @@ import store from './redux/store';
 
 class App extends React.Component {
 
-
   render() {
 
     return (
@@ -22,7 +21,6 @@ class App extends React.Component {
       </Provider>
     );
   }
-
 }
 
 export default App;
