@@ -9,6 +9,16 @@
             done: false,
             name: "Incorporar a firebase las tareas Evertask",
             duration: "four days"
+        },
+        {
+            done: true,
+            name: "Fix visual issue",
+            duration: "one day"
+        },
+        {
+            done: true,
+            name: "Incorporar a firebase las tareas Evertask",
+            duration: "twelve days"
         }
      ]
 }
