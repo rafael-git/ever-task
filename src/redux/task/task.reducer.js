@@ -3,22 +3,22 @@
          {
              done: true,
              name: "Crear primera tarea de Evertask",
-             duration: "two days"
+             duration: "2"
          },
          {
             done: false,
             name: "Incorporar a firebase las tareas Evertask",
-            duration: "four days"
+            duration: "4"
         },
         {
             done: true,
             name: "Fix visual issue",
-            duration: "one day"
+            duration: "1"
         },
         {
             done: true,
             name: "Incorporar a firebase las tareas Evertask",
-            duration: "twelve days"
+            duration: "12"
         }
      ]
 }

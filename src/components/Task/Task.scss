@@ -4,7 +4,7 @@
 
     align-items: center;
     min-height: 3.4rem;
-    justify-content: center;
+    justify-content: space-between;
     
 
 
@@ -17,24 +17,27 @@
         text-align: center;
         
     }
+
     .t-check{
-        flex-grow: 1.3;
-        
-    }
-    .t-name{
-        flex-grow: 6;
-        padding-left: 2rem;
-    }
-    .t-duration{
-        flex-grow: 3;
-        
-    }
-    .t-edit{
-        flex-grow: 1.1;
-        padding-right: 1.5rem;
+       width: 15%;
     }
 
+    .t-name{
+        width: 65%;
+    }
+    .t-duration{
+        width: 15%;
+    }
+    .t-edit{
+        width: 15%;
+    }
 }
+
+
+
+
+
+
 .icon{
     fill: #085c08;
 }

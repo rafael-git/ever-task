@@ -1,24 +1,18 @@
-import React from 'react';
-import {connect} from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
-import TaskCollection from '../../components/TaskCollection/index';
-import Task from '../../components/Task';
+import TaskCollection from "../../components/TaskCollection/index";
+import Task from "../../components/Task";
 
 const AllTasks = (props) => {
-    return(
-        <TaskCollection>
-           {
-               props.tasks.map(task => (
-                   <Task isChecked={task.done} name={task.name} duration={task.duration}/>
-               ))
-           }
-        </TaskCollection>            
-        
-    );
-}
+  const tasks = useSelector((state) => state.task.tasks);
+  return (
+    <TaskCollection>
+      {tasks.map((task) => (
+        <Task isChecked={task.done} name={task.name} duration={task.duration} />
+      ))}
+    </TaskCollection>
+  );
+};
 
-const mapStateToProps = (state) => ({
-    tasks: state.task.tasks
-});
-
-export default  connect(mapStateToProps)(AllTasks);
+export default AllTasks;

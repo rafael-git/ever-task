@@ -13,7 +13,7 @@ const TaskCollection = (props) => {
             <div className="task-header">
                 <div className="header-text done">Done</div>
                 <div className="header-text name">Name</div>
-                <div className="header-text duration">Duration</div>
+                <div className="header-text duration">Duration(Days)</div>
                 <div className="header-text edit">Edit</div>
 
             </div>

@@ -12,7 +12,6 @@ import store from './redux/store';
 class App extends React.Component {
 
   render() {
-
     return (
       <Provider store={store}>
         <BrowserRouter>
